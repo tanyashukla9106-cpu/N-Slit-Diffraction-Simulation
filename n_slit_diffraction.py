@@ -19,7 +19,8 @@ def main():
     plt.xlabel("Angle (mrad)")
     plt.ylabel("Normalized Intensity (I / I₀)")
     plt.grid(True, linestyle='--', alpha=0.6)
-    plt.show()
+    plt.savefig("diffraction_pattern.png", dpi=150)
+print("Saved as diffraction_pattern.png")
 
 if __name__ == "__main__":
     main()
